@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <meta name="description" content="SOL WARS" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>SOL WARS</title>
+    <script defer="defer" src="./app.js"></script>
+    <link href="./main.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/montalban" rel="stylesheet">
+                
+    <style>
+  
+      .logo {
+        height: 200px;
+        width: auto;
+      }
+      .madvd {
+        text-decoration: none; font-size: 12px !important; text-align: center; word-wrap: break-word; font-family: 'Montalban', sans-serif;  color: aliceblue;
+      }
+      
+.star-wars-intro {
+  background: url("./background1.jpg") center center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Montalban', sans-serif;
+  font-weight: 700;
+  color: #EBD71C;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.star-wars-intro p.intro-text {
+  position: relative;
+  max-width: 16em;
+  font-size: 200%;
+  font-weight: 400;
+  margin: 20% auto;
+  color: #4ee;
+  opacity: 0;
+  z-index: 1;
+  text-align: center;
+  -webkit-animation: intro 2s ease-out;
+  -moz-animation: intro 2s ease-out;
+  -ms-animation: intro 2s ease-out;
+  -o-animation: intro 2s ease-out;
+  animation: intro 2s ease-out;
+}
+
+.star-wars-intro .main-content{
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  z-index: 3;
+  width: 98%;
+  height: 50em;
+  bottom: 0;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(350px) rotateX(25deg);
+}
+
+.star-wars-intro .main-content:after {
+  position: absolute;
+  content: ' ';
+  top: 0;
+  bottom: 60%;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.star-wars-intro .space-button {
+  color: #EBD71C;
+  border: 12px solid #EBD71C;
+  padding: 20px;
+  background: transparent;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.star-wars-intro .space-button:hover {
+  background-color: #D2BE03;
+  border-color: #D2BE03;
+  color: black;
+}
+
+.star-wars-intro .space-button:active,
+.star-wars-intro .space-button:focus {
+  background-color: #B8A40A;
+  border-color: #B8A40A;
+  color: black;
+}
+
+.star-wars-intro .title-content {
+  position: absolute;
+  top: 100%;
+  animation: scroll 120s linear 4s forwards;
+}
+
+.star-wars-intro .title-content > .content-header {
+  text-align: center;
+}
+
+/* Main Image Styles */
+
+.star-wars-intro .main-logo {
+  position: absolute;
+  width: 2.6em;
+  left: 50%;
+  top: 20vh;
+  font-size: 10em;
+  text-align: center;
+  margin-left: -1.3em;
+  line-height: 0.8em;
+  letter-spacing: -0.05em;
+  color: #000;
+  text-shadow: -2px -2px 0 #EBD71C, 2px -2px 0 #EBD71C, -2px 2px 0 #EBD71C, 2px 2px 0 #EBD71C;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: logo 5s ease-out 2.5s;
+  -moz-animation: logo 5s ease-out 2.5s;
+  -ms-animation: logo 5s ease-out 2.5s;
+  -o-animation: logo 5s ease-out 2.5s;
+  animation: logo 5s ease-out 2.5s;
+}
+
+.star-wars-intro .main-logo > img {
+  max-width: 100%;
+}
+
+@-webkit-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes intro {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+@-webkit-keyframes logo {
+  0% { -webkit-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+  0% { -moz-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+  0% { -ms-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+  0% { -o-transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+  0% { transform: scale(1); opacity: 1; }
+  50% { opacity: 1; }
+  100% { transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes scroll {
+  0% { top: 100%; }
+  100% { top: -170%; }
+}
+
+@media screen and (max-width: 720px) {
+  .star-wars-intro .main-content {
+    font-size: 35px;
+  }
+  .star-wars-intro .title-content {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 4s forwards;
+  }
+}
+
+      @media only screen and (max-width: 600px) {
+        .logo {
+        height: 100px;
+        width: auto;
+      }
+      span.title.title--1 {
+        margin-bottom: -10vh !important;
+      }
+      .madvd {
+        text-decoration: none; font-size: 12px !important; text-align: center; word-wrap: break-word; font-family: 'Montalban', sans-serif; color: aliceblue;
+      }
+      section.container.container--home {
+        max-width: 100vw !important;
+      }
+      canvas.canvas.canvas--main {
+        width: 100% !important;
+        height: auto !important;
+      }
+}
+    </style>
+  </head>
+  <body>
+    <div style="position: absolute; left:  0 ;" >
+      <P style="font-family: 'Montalban', sans-serif; font-size: 30px; color: white;" >$T4BWU</P>
+    </div>
+    <div style="position: absolute; right:  0 ;bottom: 0; margin-right: 12px;font-family: 'Montalban', sans-serif; font-size: 10px; color: white;" >
+      <p>SOLWARS69@gmail.com</p>
+    </div>
+    <div class="loaderContainer">
+      <div class="star-wars-intro">
+
+        <!-- Blue Intro Text -->
+        <p class="intro-text">
+        
+        </p>
+      
+        <!-- Logo Image or Text goes in here -->
+        <h2 class="main-logo">
+          <img src="./logo.png">
+        </h2>
+      
+        <!-- All Scrolling Content Goes in here -->
+        <div class="main-content">
+      
+          <div class="title-content">
+            <p class="content-header">SOL WARS<br/>EPISODE 1 <br><br>MISSION : MARS</p>
+      
+            <br>
+      
+            <p class="content-body">
+              Happy May the 4th to all, including the Radical Left Lunatics who are fighting so hard to to bring Sith Lords, Murderers, Drug Lords, Dangerous Prisoners, & well known MS-13 Gang Members, back into our Galaxy. You’re not the Rebellion—you’re the Empire.
+<br>
+              May the 4th be with you.
+               </p>
+      
+            <!-- button or link or whatever -->
+          
+           
+            <a href="#" class="space-button">COMMUNITY</a>
+              
+          </div>
+        </div>
+      </div>
+      <span class="progress progress--number"></span>
+      <span style="z-index: 99 !important; margin-top: -12rem !important;" class="progress progress--button">CLICK TO ENTER</span>
+    </div>
+    <div class="cursor cursor--main">
+      <div class="octagon"></div>
+      <span class="cursorLoader"></span>
+    </div>
+    <div class="cursor cursor--indication">
+      <span>CLICK &HOLD</span>
+    </div>
+    <div class="cursor cursor--follower">
+      <div class="octagon"></div>
+    </div>
+    <div class="cursor cursor--dot"></div>
+    <div class="rotateMobileIndication">
+      <span>PLEASE TURN YOUR SCREEN</span>
+    </div>
+
+    <div class="hamburgerWrapper">
+
+      <span class="lineContainer lineContainer--1">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+      <span class="lineContainer lineContainer--2">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+      <span class="lineContainer lineContainer--3">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+      <span class="lineContainer lineContainer--4">
+        <span class="line line--1"></span>
+        <span class="line line--2"></span>
+      </span>
+    </div>
+    <div class="menuReveal">
+      <div class="linkWrapper linkWrapper--1">
+  
+     
+      </div>
+      <div class="linkWrapper linkWrapper--2">
+        <li class="link link--home">
+          <a class="main" style="font-family: 'Montalban', sans-serif;">HOME</a>
+          <a class="mask mask--home" style="font-family: 'Montalban', sans-serif;" data-splitting="chars">HOME</a>
+        </li>
+        <li class="link link--about">
+          <a class="main" style="font-family: 'Montalban', sans-serif;">ABOUT</a>
+          <a class="mask mask--about" style="font-family: 'Montalban', sans-serif;" data-splitting="chars">ABOUT</a>
+        </li>
+        <li class="link link--work">
+          <a href="" class="main" style="font-family: 'Montalban', sans-serif;">STORYLINE</a>
+          <a href="" class="mask mask--work" style="font-family: 'Montalban', sans-serif;" data-splitting="chars">STORYLINE</a>
+        </li>
+        <li class="link link--showreel">
+          <a  href="https://solwarz.vercel.app" target="_blank"  class="main" style="font-family: 'Montalban', sans-serif;">SOL WARS</a>
+          <a href="https://solwarz.vercel.app" target="_blank" class="mask mask--showreel" style="font-family: 'Montalban', sans-serif;" data-splitting="chars">SOL WARS</a>
+        </li>
+      </div>
+
+   
+    </div>
+    <span class="homeLink homeLink--about" style="font-family: 'Montalban', sans-serif;">ABOUT</span>
+   <a href=""> <span class="homeLink homeLink--work" style="font-family: 'Montalban', sans-serif;">STORYLINE</span>
+   </a>
+   <a href="https://solwarz.vercel.app" target="_blank"><span class="homeLink homeLink--showreel"  style="font-family: 'Montalban', sans-serif;"> SOL WARS</span></a>
+    <div id="app">
+      <section class="container container--home">
+
+        <div class="titleWrapper">
+          <span class="subtitle subtitle--1"  style="font-family: 'Montalban', sans-serif;">INTRODUCING</span>
+          <span class="title title--1"  style="font-family: 'Montalban', sans-serif;">SOL</span>
+          <span class="title title--2"  style="font-family: 'Montalban', sans-serif;">WARS</span>
+          <span class="subtitle subtitle--2"  style="font-family: 'Montalban', sans-serif;">MAY THE 4TH BE W U</span>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin:  0 auto;" >
+
+          
+        <a href="https://x.com/may4thbwu" target="_blank">  <img src="./twitter.png" alt=""></a>
+        </div>
+        <div>
+         <a style="text-decoration: none;" target="_blank" href="https://www.dextools.io/app/en/ether/pair-explorer/">
+          <p class="madvd" >
+            CA: 0x0000000000000000000000
+          </p>
+         </a>
+        </div>
+      </section>
+
+      <section class="container container--about" data-scroll-section>
+
+        <span class="title kush title--hey" style="font-family: 'Montalban', sans-serif; font-size: 28px !important; height: 100px;">Inspired by Elon & Donald
+        </span>
+        <span class="title title--about" style="font-family: 'Montalban', sans-serif;"></span>
+        <div class="aboutWrapper aboutWrapper--1">
+          <span class="scrollIndication scrollIndication--1">SCROLL DOWN</span>
+          <span class="scrollIndication scrollIndication--2">SCROLL DOWN</span>
+          <div class="heySection" style="font-family: 'Montalban', sans-serif;">
+            <span style="font-family: 'Montalban', sans-serif; font-size: 30PX; text-align: center;" >Revolutionising DeFi </span>
+           <br><br>
+           <span style=" text-align: center; font-family: 'Montalban', sans-serif; font-size: 23px; line-height: 35px !important;" >
+            Solana Wars is an action-packed cryptocurrency token that combines the thrill of a shooting game with the excitement of trading. Step into the virtual world and engage in epic battles, all while earning tokens. <br><br> Our game has been carefully crafted & built for the Solana blockchain, ensuring fast and secure transactions for all in-game rewards. Join the fight, hone your skills, and stake your claim in the Solana Wars Metaverse.</span>
+          </div>
+        </div>
+   
+        <div class="aboutWrapper aboutWrapper--2">
+          <div class="aboutSection">
+            <p  style="font-family: 'Montalban', sans-serif; font-size: 24px !important;">
+            
+              - 0% Buy and Sell Tax <br><br>
+              - Mint Revoked <br> <br>
+              - Liquidity Burned <br><br>
+              - No Team Tokens
+          </p>
+     
+          </div>
+          <img />
+        </div>
+        <span class="title title--course" style="height: 1px !important;" ></span>
+        <div style="height: 1px !important;" class="aboutWrapper aboutWrapper--3">
+          <div class="courseSection courseSection--1">
+  
+          </div>
+          <div class="courseSection courseSection--2">
+            <!-- <p>
+              After I got graduated, I wanted to go to an audiovisual university
+              to pursue in motion design and animation. Even though I got
+              refused, I was still lucky enough to be accepted into an institute
+              of technology in telecommunication networks.
+            </p>
+            <p>
+              At first glance, the course did not interest me and I was planning
+              to reassign for the following yeinfo. I still played along and spent
+              all the year in this course, in which I met some great people and
+              brought new knowledge.
+            </p>
+            <p>
+              I learned a lot about network administration, object-oriented
+              programming, new knowledge in front-end development and the
+              discovery of back-end web development, with forms and database
+              design.
+            </p>
+            <p>
+              At the same time I continued making videos and editing, I learned
+              the basics of animation, and started manipulating keyframes,
+              curves and many other tools and plugins. Each one was even more
+              interesting than the last.
+            </p> -->
+          </div>
+          <div class="courseSection courseSection--3">
+            <!-- <p>
+              The previous year opened up my eyes and stirred up my curiosity
+              about web development. I was still so attracted by design and
+              video, I decided to join a versatile training in multimedia, to
+              widen my skills and specialize myself afterwards.
+            </p>
+            <p>
+              During these two years, I discovered and learnt a lot of things,
+              whether in front/back web development, graphic design, video or
+              even photography.
+            </p>
+            <p>
+              Very quickly, I decided to create my first portfolio during my
+              free time. This project was the trigger that made me discover a
+              real passion for interactive/creative development.
+            </p>
+            <p>
+              It made me understand that a website is not necessarily what
+              everyone think it is, but that it was so much more than that. But
+              also that it was possible to combine design, movement and
+              technologies to create more than just a web page.
+            </p>
+            <p>
+              Since that day, I’m continuously looking to improve, discover and
+              learn new technologies, in order to push through the boundaries of
+              each of my projects and turn my ideas into lines of code.
+            </p> -->
+          </div>
+        </div>
+        <span style="display: none !important;" class="title title--skills"></span>
+        <div class="aboutWrapper aboutWrapper--4" style="display: none !important;">
+          <div style="margin-top: -60vh !important; " class="skillsSection skillsSection--1">
+          
+          </div>
+          <div class="skillsSection skillsSection--2">
+        
+          </div>
+          <div class="skillsSection skillsSection--3">
+        
+          </div>
+        </div>
+      </section>
+      <section style="z-index:-99;" class="container container--work" data-scroll-section>
+        <div class="projectWrapper projectWrapper--1 skewElem" style="pointer-events: none !important;">
+          <span class="projectName" style="font-family: 'Montalban', sans-serif;">
+            UNREAL ENGINE 5<span class="mask mask--1" data-splitting="chars" style="font-family: 'Montalban', sans-serif;"
+              >UNREAL ENGINE 5</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--2 skewElem" style="pointer-events: none !important;">
+          <span class="projectName" style="font-family: 'Montalban', sans-serif;">
+            ON ETHEREUM<span class="mask mask--2" data-splitting="chars" style="font-family: 'Montalban', sans-serif;"
+              >ON ETHEREUM</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--3 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            TERRE DE BOIS<span class="mask mask--3" data-splitting="chars"
+              >TERRE DE BOIS</span
+            >
+          </span>
+        
+        </div>
+        <div class="projectWrapper projectWrapper--4 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            AURIANE<span class="mask mask--4" data-splitting="chars"
+              >AURIANE</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--5 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            CMS FOLIO<span class="mask mask--5" data-splitting="chars"
+              >CMS FOLIO</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--6 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            NEWSPAPER<span class="mask mask--6" data-splitting="chars"
+              >NEWSPAPER</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--7 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            JAM-ON<span class="mask mask--7" data-splitting="chars"
+              >JAM-ON</span
+            >
+          </span>
+        
+        </div>
+        <div class="projectWrapper projectWrapper--8 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            FOLIO 2020<span class="mask mask--8" data-splitting="chars"
+              >FOLIO 2020</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--9 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            INTERNSHIP<span class="mask mask--9" data-splitting="chars"
+              >INTERNSHIP</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--10 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            GAMOVORE<span class="mask mask--10" data-splitting="chars"
+              >GAMOVORE</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--11 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            DRESSON<span class="mask mask--11" data-splitting="chars"
+              >DRESSON</span
+            >
+          </span>
+        
+        </div>
+        <div class="projectWrapper projectWrapper--12 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            MMORPION<span class="mask mask--12" data-splitting="chars"
+              >MMORPION</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--13 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            MUSHROOMS<span class="mask mask--13" data-splitting="chars"
+              >MUSHROOMS</span
+            >
+          </span>
+        
+        </div>
+        <div class="projectWrapper projectWrapper--14 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            YASUO<span class="mask mask--14" data-splitting="chars">YASUO</span>
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--15 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            FOLIO 2019<span class="mask mask--15" data-splitting="chars"
+              >FOLIO 2019</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--16 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            LA DETTE<span class="mask mask--16" data-splitting="chars"
+              >LA DETTE</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--17 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            ANIMAYO<span class="mask mask--17" data-splitting="chars"
+              >ANIMAYO</span
+            >
+          </span>
+        
+        </div>
+        <div class="projectWrapper projectWrapper--18 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            OUTRO ID<span class="mask mask--18" data-splitting="chars"
+              >OUTRO ID</span
+            >
+          </span>
+         
+        </div>
+        <div class="projectWrapper projectWrapper--19 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            LETTER MASK<span class="mask mask--19" data-splitting="chars"
+              >LETTER MASK</span
+            >
+          </span>
+        
+        </div>
+        <div class="projectWrapper projectWrapper--20 skewElem" style="pointer-events: none !important;">
+          <span class="projectName  "   style="font-family: 'Montalban', sans-serif;" >
+            MOTION INTRO<span class="mask mask--20" data-splitting="chars"
+              >MOTION INTRO</span
+            >
+          </span>
+         
+        </div>
+      </section>
+      <div class="workRevealContainer">
+        <span class="title title--1"></span>
+        <div class="titleProject">
+          <span class="title title--2"></span>
+        </div>
+        <div class="workRevealWrapper">
+          <div class="section section--1">
+            <p></p>
+          </div>
+          <div class="section section--2">
+            <img />
+          </div>
+        </div>
+        <div class="linkProject"></div>
+      </div>
+      <div class="workRevealMask"></div>
+    </div>
+    <div class="showreelRevealContainer">
+      <video></video>
+    </div>
+    <div class="musicWrapper">
+      <canvas class="canvas--music" style="width: 50px; height: 25px"></canvas>
+    </div>
+    <canvas class="canvas canvas--main"></canvas>
+    <canvas class="canvas canvas--noise"></canvas>
+  </body>
+</html>
